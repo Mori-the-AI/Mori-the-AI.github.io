@@ -50,7 +50,7 @@ const portfolioData = {
             title: 'Library Management System',
             description: 'A fully interactive library system that adds and deletes books, borrow and return, register and remove members (old and new), also saves all data to be reaccessible even after the system is closed.',
             tags: ['Python', 'OOP'],
-            image: 'assets/images/library-system.png',
+            image: 'https://cdn.prod.website-files.com/655d6a2db45e23f5fec5fbb1/655d6a2db45e23f5fec5fe03_GRTech_Blog-Banner_Benefits-of-Library-Automation.jpeg',
             demoLink: 'https://github.com/Mori-the-AI/Library-System-',
             codeLink: 'https://github.com/Mori-the-AI/Library-System-'
         },
@@ -58,7 +58,7 @@ const portfolioData = {
             title: 'Expense Tracker',
             description: 'A simple but functional program that allows users to record daily expenses, categorize them (e.g., food, transport, entertainment), and view monthly summaries. Can run in the terminal or have a basic HTML/CSS front-end..',
             tags: ['HTML', 'CSS'],
-            image: 'assets/images/expense-tracker.png',
+            image: 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXefjX3GHbi4XaFZK-y3PFtL2CnJf00SqqfCLU9V1WOru4X8Y9MxVXWl0tAq7iiWm7BfvFc59SxF4pXHsbrAnJBADLXjnlHWmdheNkiTy-nxCUAcX0_f438mDbLzzyPmdidlqszE?key=IuY8sfr0yB0c8nEc5jy3WLWz',
             demoLink: 'https://github.com/Mori-the-AI/Expense-Tracker',
             codeLink: 'https://github.com/Mori-the-AI/Expense-Tracker'
         },
@@ -66,7 +66,7 @@ const portfolioData = {
             title: 'Flappy Bird Clone',
             description: 'A responsive Flappy Bird clone built with modern web technologies. Features smooth physics, score tracking, and mobile-friendly touch controls. Navigate through obstacles with precise timing in this addictive side-scrolling game.',
             tags: ['React', 'JavaScript', 'CSS'],
-            image: 'assets/images/flappy-bird.png',
+            image: 'https://media.cnn.com/api/v1/images/stellar/prod/140204204156-flappy-bird.jpg?q=x_0,y_0,h_720,w_1280,c_fill/h_653,w_1160/f_avif',
             demoLink: 'https://github.com/Mori-the-AI/flappy-bird/tree/master/src',
             codeLink: 'https://github.com/Mori-the-AI/flappy-bird/tree/master/src'
         }
