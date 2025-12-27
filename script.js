@@ -96,7 +96,6 @@ const currentYear = document.getElementById('currentYear');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    // Set current year
     currentYear.textContent = new Date().getFullYear();
     
     // Initialize AOS
@@ -106,19 +105,19 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
     });
     
-    // Initialize Feather Icons
+    // for feather icns
     feather.replace();
     
-    // Initialize dark mode
+    // dark mode
     initDarkMode();
     
-    // Load dynamic content
+    // dynamic content
     loadExperiences();
     loadEducationData();
     loadSkills();
     loadProjects();
     
-    // Setup event listeners
+    // event listeners
     setupEventListeners();
 });
 
@@ -252,9 +251,9 @@ function loadProjects() {
     feather.replace();
 }
 
-// Setup Event Listeners
+// event Listeners
 function setupEventListeners() {
-    // Dark mode toggles
+    // Dark mode toggle
     darkModeToggle.addEventListener('click', toggleDarkMode);
     mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
     
@@ -265,7 +264,7 @@ function setupEventListeners() {
         feather.replace();
     });
     
-    // Navbar scroll effect
+    // Navbar 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -274,7 +273,7 @@ function setupEventListeners() {
         }
     });
     
-    // Tab switching
+    // Tab switches
     experienceTab.addEventListener('click', function() {
         experienceTab.classList.add('text-primary', 'border-b-2', 'border-primary');
         experienceTab.classList.remove('text-gray-500', 'dark:text-gray-400');
@@ -283,7 +282,7 @@ function setupEventListeners() {
         experienceContent.classList.remove('hidden');
         educationContent.classList.add('hidden');
         
-        // Load education data when tab is clicked
+        
         if (educationContent.children.length === 0) {
             let educationHTML = '';
             portfolioData.educations.forEach((edu, index) => {
@@ -318,7 +317,7 @@ function setupEventListeners() {
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Show loading state
+        
         submitBtn.innerHTML = `
             <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -328,7 +327,7 @@ function setupEventListeners() {
         `;
         submitBtn.disabled = true;
         
-        // Hide any previous messages
+    
         successMessage.classList.add('hidden');
         errorMessage.classList.add('hidden');
         
@@ -340,7 +339,7 @@ function setupEventListeners() {
         };
         
         try {
-            // Replace with your actual Formspree endpoint
+           
             const response = await fetch('https://formspree.io/f/mblzyqzk', {
                 method: 'POST',
                 headers: {
@@ -354,7 +353,7 @@ function setupEventListeners() {
             });
             
             if (response.ok) {
-                // Show success message
+                
                 successMessage.classList.remove('hidden');
                 contactForm.reset();
                 
@@ -366,16 +365,16 @@ function setupEventListeners() {
                 throw new Error('Failed to send message');
             }
         } catch (error) {
-            // Show error message
+            
             errorMessage.classList.remove('hidden');
         } finally {
-            // Reset button
+            
             submitBtn.innerHTML = 'Send Message';
             submitBtn.disabled = false;
         }
     });
     
-    // Close mobile menu when clicking a link
+    // Close mobile menu on link click
     document.querySelectorAll('#mobileMenu a').forEach(link => {
         link.addEventListener('click', function() {
             mobileMenu.classList.add('hidden');

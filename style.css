@@ -1,4 +1,4 @@
-/* Custom CSS */
+
 .gradient-text {
     background: linear-gradient(90deg, #8b5cf6, #ec4899);
     -webkit-background-clip: text;
@@ -34,14 +34,14 @@
     color: white;
 }
 
-/* Fix long text overflow */
+
 .contact-email {
     word-break: break-all;
     overflow-wrap: anywhere;
     hyphens: auto;
 }
 
-/* Fix horizontal scroll */
+
 html, body {
     overflow-x: hidden;
     margin: 0;
