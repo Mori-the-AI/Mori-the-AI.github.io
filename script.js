@@ -50,7 +50,7 @@ const portfolioData = {
             title: 'Library Management System',
             description: 'A fully interactive library system that adds and deletes books, borrow and return, register and remove members (old and new), also saves all data to be reaccessible even after the system is closed.',
             tags: ['Python', 'OOP'],
-            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+            image: 'assets/images/library-system.png',
             demoLink: 'https://github.com/Mori-the-AI/Library-System-',
             codeLink: 'https://github.com/Mori-the-AI/Library-System-'
         },
@@ -58,7 +58,7 @@ const portfolioData = {
             title: 'Expense Tracker',
             description: 'A simple but functional program that allows users to record daily expenses, categorize them (e.g., food, transport, entertainment), and view monthly summaries. Can run in the terminal or have a basic HTML/CSS front-end..',
             tags: ['HTML', 'CSS'],
-            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80',
+            image: 'assets/images/expense-tracker.png',
             demoLink: 'https://github.com/Mori-the-AI/Expense-Tracker',
             codeLink: 'https://github.com/Mori-the-AI/Expense-Tracker'
         },
@@ -66,7 +66,7 @@ const portfolioData = {
             title: 'Flappy Bird Clone',
             description: 'A responsive Flappy Bird clone built with modern web technologies. Features smooth physics, score tracking, and mobile-friendly touch controls. Navigate through obstacles with precise timing in this addictive side-scrolling game.',
             tags: ['React', 'JavaScript', 'CSS'],
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
+            image: 'assets/images/flappy-bird.png',
             demoLink: 'https://github.com/Mori-the-AI/flappy-bird/tree/master/src',
             codeLink: 'https://github.com/Mori-the-AI/flappy-bird/tree/master/src'
         }
