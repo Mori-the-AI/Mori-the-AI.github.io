@@ -1,0 +1,70 @@
+/* Custom CSS */
+.gradient-text {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.glass-effect {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .glass-effect {
+    background: rgba(15, 23, 42, 0.7);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.1);
+}
+
+.skill-pill:hover {
+    transform: scale(1.05);
+}
+
+::selection {
+    background: #8b5cf6;
+    color: white;
+}
+
+/* Fix long text overflow */
+.contact-email {
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+}
+
+/* Fix horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for navbar scroll */
+nav.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
